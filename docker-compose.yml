@@ -23,6 +23,11 @@
     db:
         image: postgres
 
+        environment:
+            POSTGRES_USER: aggregator
+            POSTGRES_PASSWORD: aggregator
+            POSTGRES_DB: aggregator
+
 
 
 
