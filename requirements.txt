@@ -1,0 +1,11 @@
+Django
+psycopg2
+Pillow
+pytest-django
+faker
+django-disqus
+faker
+django-hosts
+pytils
+django-ckeditor
+requests

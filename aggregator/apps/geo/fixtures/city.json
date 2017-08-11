@@ -1,0 +1,18 @@
+[
+  {
+    "model": "geo.City",
+    "pk": 1,
+    "fields": {
+      "name": "Москва",
+      "domain_name": "msk"
+    }
+  },
+
+  {
+    "model": "geo.City",
+    "pk": 2,
+    "fields": {
+      "name": "Санкт-Петербург",
+      "domain_name": "spb"
+    }
+  }]
