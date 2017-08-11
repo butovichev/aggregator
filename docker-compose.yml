@@ -5,19 +5,22 @@
 
     web:
         build: .
-        command: python3 ./manage.py runserver 0.0.0.0:8000
         volumes:
             - .:/aggregator
         ports:
             - "8000:8000"
-        depends_on:
-            - db
+
         extra_hosts:
             - "www.localhost:127.0.0.1"
             - "msk.localhost:127.0.0.1"
             - "spb.localhost:127.0.0.1"
+        
         command: bash -c "python manage.py migrate"
         command: bash -c "python manage.py loaddata city"
+        command: python3 ./manage.py runserver 0.0.0.0:8000
+
+        depends_on:
+            - db
 
 
 
