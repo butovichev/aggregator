@@ -16,6 +16,7 @@
             - "www.localhost:127.0.0.1"
             - "msk.localhost:127.0.0.1"
             - "spb.localhost:127.0.0.1"
+        command: bash -c "python manage.py migrate"
         command: bash -c "python manage.py loaddata city"
 
 
