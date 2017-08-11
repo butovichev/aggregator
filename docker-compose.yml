@@ -1,8 +1,6 @@
  version: '2'
  services:
-    db:
-        image: postgres
-
+    
     web:
         build: .
         volumes:
@@ -21,6 +19,9 @@
 
         depends_on:
             - db
+
+    db:
+        image: postgres
 
 
 
